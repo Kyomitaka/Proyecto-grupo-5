@@ -1,0 +1,43 @@
+/**
+ *
+ * @author fran1
+ */
+public class Habitat {
+    private String nombre;
+    private String TipoAmbiente;
+    private int capacidad;
+
+    public Habitat(String nombre, String TipoAmbiente, int capacidad) {
+        this.nombre = nombre;
+        this.TipoAmbiente = TipoAmbiente;
+        this.capacidad = capacidad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getTipoAmbiente() {
+        return TipoAmbiente;
+    }
+
+    public int getCapacidad() {
+        return capacidad;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setTipoAmbiente(String TipoAmbiente) {
+        this.TipoAmbiente = TipoAmbiente;
+    }
+
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
+    }
+    
+    public String toStrin(){
+        return nombre + " " + TipoAmbiente + "Capacidad: " + capacidad;
+    }
+}
