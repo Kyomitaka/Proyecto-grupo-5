@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+/**
+ *
+ * @author fran1
+ */
+public class GestionAnimales {
+    private ArrayList<Animales> animal;
+    
+    public GestionAnimales(){
+        animal = new ArrayList<>();
+        
+        animal.add(new Animales("Leon", "Elefante", 3, "sabana"));
+        animal.add(new Animales("Gorila", "Rinoceronte", 3, "Jungla"));
+        
+    }
+    public void añadirAnimales(Animales animales) {
+    }
+        public void eliminarAnimales(Animales animales) {
+    }
+    public Animales buscarAnimales(String nombre) {
+    for (Animales animales : animal){
+        if (animales.getNombre().equalsIgnoreCase(nombre)){
+            return animales;
+        }  
+    }
+    return null;
+    }
+    public void listaranimal(){
+        for (Animales animales : animal){
+            System.out.println(animales);
+        }
+    }
+}
+// esto es para agregar animales
