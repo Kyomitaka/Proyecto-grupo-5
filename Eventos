@@ -1,0 +1,55 @@
+import java.util.logging.Logger;
+
+/**
+ *
+ * @author fran1
+ */
+public class Evento {
+    private String nombreEvento;
+    private String fecha;
+    private String id;
+    private String descripcion;
+
+    public Evento(String nombreEvento, String fecha, String id, String descripcion) {
+        this.nombreEvento = nombreEvento;
+        this.fecha = fecha;
+        this.id = id;
+        this.descripcion = descripcion;
+    }
+
+    public String getNombreEvento() {
+        return nombreEvento;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setNombreEvento(String nombreEvento) {
+        this.nombreEvento = nombreEvento;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+public String toString(){
+    return nombreEvento + " " + fecha + " ID: " + id + " " + descripcion;
+}
+}
